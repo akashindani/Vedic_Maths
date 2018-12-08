@@ -1,0 +1,133 @@
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;match_parent&quot;
+android:paddingLeft=&quot;@dimen/activity_horizontal_margin&quot;
+android:paddingRight=&quot;@dimen/activity_horizontal_margin&quot;
+android:paddingTop=&quot;@dimen/activity_vertical_margin&quot;
+android:paddingBottom=&quot;@dimen/activity_vertical_margin&quot;
+tools:context=&quot;.MainActivity&quot;
+android:background=&quot;@mipmap/vedic&quot;&gt;
+&lt;TextView
+
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot;
+android:text=&quot;Vedic Maths&quot;
+android:id=&quot;@+id/title1&quot;
+android:layout_alignParentTop=&quot;true&quot;
+android:layout_centerHorizontal=&quot;true&quot;
+android:layout_marginTop=&quot;52dp&quot;
+android:textSize=&quot;40dp&quot;
+android:textStyle=&quot;bold&quot; /&gt;
+&lt;Button
+android:layout_width=&quot;250dp&quot;
+android:layout_height=&quot;80dp&quot;
+android:text=&quot;@string/Flash&quot;
+android:id=&quot;@+id/flash&quot;
+android:background=&quot;#ffffde5b&quot;
+android:textSize=&quot;35dp&quot;
+android:textColorHighlight=&quot;#fffff4f2&quot;
+android:layout_above=&quot;@+id/quiz&quot;
+android:layout_alignLeft=&quot;@+id/quiz&quot;
+android:layout_alignStart=&quot;@+id/quiz&quot;
+android:layout_marginBottom=&quot;30dp&quot;
+android:focusable=&quot;true&quot;
+android:focusableInTouchMode=&quot;false&quot;
+android:textColor=&quot;#ffffffff&quot;
+android:onClick=&quot;sendMessage&quot;/&gt;
+&lt;Button
+android:layout_width=&quot;250dp&quot;
+android:layout_height=&quot;80dp&quot;
+android:text=&quot;@string/flashyQuiz&quot;
+android:id=&quot;@+id/quiz&quot;
+android:textSize=&quot;35dp&quot;
+android:textColor=&quot;#ffffffff&quot;
+android:background=&quot;#ffffde5b&quot;
+android:layout_alignParentBottom=&quot;true&quot;
+android:layout_alignRight=&quot;@+id/title1&quot;
+android:layout_alignEnd=&quot;@+id/title1&quot; /&gt;
+&lt;/RelativeLayout&gt;
+Strings.xml
+
+&lt;resources&gt;
+&lt;string name=&quot;app_name&quot;&gt;MathMagic&lt;/string&gt;
+&lt;string name=&quot;hello_world&quot;&gt;Hello world!&lt;/string&gt;
+&lt;string name=&quot;action_settings&quot;&gt;Settings&lt;/string&gt;
+&lt;string name=&quot;Flash&quot;&gt;Tutorial&lt;/string&gt;
+&lt;string name=&quot;flashyQuiz&quot;&gt;Quiz&lt;/string&gt;
+&lt;string name=&quot;b1q1&quot;&gt;8401&lt;/string&gt;
+&lt;string name=&quot;q1b2&quot;&gt;8281&lt;/string&gt;
+&lt;string name=&quot;q1b3&quot;&gt;8391&lt;/string&gt;
+&lt;string name=&quot;q1b4&quot;&gt;8241&lt;/string&gt;
+&lt;string name=&quot;q2&quot;&gt;Q2) Find the product of 694 and 606 using the sutra
+&quot;Antyordasakepi&quot;.&lt;/string&gt;
+&lt;string name=&quot;q2b1&quot;&gt;420634&lt;/string&gt;
+&lt;string name=&quot;q2b2&quot;&gt;421464&lt;/string&gt;
+&lt;string name=&quot;q2b3&quot;&gt;420564&lt;/string&gt;
+&lt;string name=&quot;q2b4&quot;&gt;420334&lt;/string&gt;
+&lt;string name=&quot;q3&quot;&gt;Q3) Find the product of 198 and 102.&lt;/string&gt;
+&lt;string name=&quot;q3b2&quot;&gt;20196&lt;/string&gt;
+&lt;string name=&quot;q3b1&quot;&gt;20336&lt;/string&gt;
+&lt;string name=&quot;q3b3&quot;&gt;21296&lt;/string&gt;
+&lt;string name=&quot;q3b4&quot;&gt;20596&lt;/string&gt;
+&lt;string name=&quot;q4&quot;&gt;Q4) Find the square of 325 using Ekadhikena Purvena sutra&lt;/string&gt;
+&lt;string name=&quot;q4b1&quot;&gt;105625&lt;/string&gt;
+&lt;string name=&quot;q4b2&quot;&gt;105325&lt;/string&gt;
+&lt;string name=&quot;q4b3&quot;&gt;105885&lt;/string&gt;
+&lt;string name=&quot;q4b4&quot;&gt;105925&lt;/string&gt;
+&lt;string name=&quot;q5&quot;&gt;Q5) Find the square of 1105.&lt;/string&gt;
+&lt;string name=&quot;r5b3&quot;&gt;1221025&lt;/string&gt;
+&lt;string name=&quot;r5b1&quot;&gt;1222025&lt;/string&gt;
+&lt;string name=&quot;r5b2&quot;&gt;1223025&lt;/string&gt;
+&lt;string name=&quot;r5b4&quot;&gt;1226025&lt;/string&gt;
+&lt;string name=&quot;q6&quot;&gt;Q6) Find the product of 392 and 308.&lt;/string&gt;
+&lt;string name=&quot;q6b1&quot;&gt;120736&lt;/string&gt;
+&lt;string name=&quot;r6b2&quot;&gt;120776&lt;/string&gt;
+&lt;string name=&quot;q6b3&quot;&gt;120836&lt;/string&gt;
+&lt;string name=&quot;q6b4&quot;&gt;120436&lt;/string&gt;
+&lt;string name=&quot;q5b1&quot;&gt;1223025&lt;/string&gt;
+&lt;string name=&quot;q5b2&quot;&gt;1222025&lt;/string&gt;
+&lt;string name=&quot;q5b3&quot;&gt;1221025&lt;/string&gt;
+&lt;string name=&quot;q5b4&quot;&gt;1224025&lt;/string&gt;
+&lt;string name=&quot;q7&quot;&gt;Q7) Find the square of 93.&lt;/string&gt;
+&lt;string name=&quot;q7b4&quot;&gt;8649&lt;/string&gt;
+&lt;string name=&quot;q7b2&quot;&gt;8949&lt;/string&gt;
+&lt;string name=&quot;q7b1&quot;&gt;8049&lt;/string&gt;
+
+&lt;string name=&quot;q7b3&quot;&gt;7949&lt;/string&gt;
+&lt;string name=&quot;r8b2&quot;&gt;8455&lt;/string&gt;
+&lt;string name=&quot;q8&quot;&gt;Q8) Find the product of 89 and 95.&lt;/string&gt;
+&lt;string name=&quot;q8b1&quot;&gt;7645&lt;/string&gt;
+&lt;string name=&quot;q8b3&quot;&gt;7455&lt;/string&gt;
+&lt;string name=&quot;q8b4&quot;&gt;8255&lt;/string&gt;
+&lt;string name=&quot;q9&quot;&gt;Q9) Find 999*123.&lt;/string&gt;
+&lt;string name=&quot;q9b4&quot;&gt;122877&lt;/string&gt;
+&lt;string name=&quot;q9b3&quot;&gt;123887&lt;/string&gt;
+&lt;string name=&quot;q9b2&quot;&gt;213867&lt;/string&gt;
+&lt;string name=&quot;q9b1&quot;&gt;901857&lt;/string&gt;
+&lt;string name=&quot;q10&quot;&gt;Q10) Find 46*46.&lt;/string&gt;
+&lt;string name=&quot;q10b1&quot;&gt;2116&lt;/string&gt;
+&lt;string name=&quot;q10b2&quot;&gt;2026&lt;/string&gt;
+&lt;string name=&quot;q10b3&quot;&gt;2326&lt;/string&gt;
+&lt;string name=&quot;q10b4&quot;&gt;2816&lt;/string&gt;
+&lt;string name=&quot;wr1&quot;&gt;1) Concept of square(Ekadhikena Purvena)
+Sutra Ekadhikena Purvena means &quot;By one more than the previous one&quot;.
+The formula for this is Tenth digit * (Tenth digit +1)/(Last digit)^2.
+For eg.)Consider the square of 25.
+By using the above formula we get,
+2(2+1)/5^2
+6/25
+Answer is 625.&lt;/string&gt;
+&lt;string name=&quot;wr2&quot;&gt;2) Concept of Multiplication(Antyordasakepi)
+The sutra &quot;Antyordasakepi&quot; means &quot;The sum of last digits is ten&quot;.The sutra
+indicates that the numbers of which the last digits are added up to give
+10,100,1000 and so on.
+for eg.)Consider 401*409
+Sum of last digits = 10
+product of last digits =9
+According to the method
+40*41/1*9
+1640/09
+164009&lt;/string&gt;
+&lt;/resources&gt;
